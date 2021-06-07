@@ -1,10 +1,24 @@
 package tetris;
 
-public class Tetris {
+import java.awt.EventQueue;
 
-	public static void main(String[] args) {
-		// TODO Apéndice de método generado automáticamente
+import javax.swing.JFrame;
 
-	}
 
+public class Tetris extends JFrame {
+		public static void main(String[] args) {
+			EventQueue.invokeLater(new Runnable() {
+				public void run() throws NullPointerException, NumberFormatException {
+					try {
+						Tetris frame = new Tetris();
+						frame.setVisible(true);
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
+				}
+			});
+}
+		public Tetris() {
+			
+		}
 }
